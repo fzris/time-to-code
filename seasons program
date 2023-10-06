@@ -1,0 +1,25 @@
+# Seasons program
+
+# -------------------------
+# Subprograms
+# -------------------------
+def seasons(month):
+    match month:
+        case "12" | "1" | "2" | "December" | "January" | "February" :
+            return "winter."
+        case "3" | "4" | "5" | "March" | "April" | "May" :
+            return "spring."
+        case "6" | "7" | "8" | "June" | "July" | "August":
+            return "summer."
+        case "9" | "10" | "11" | "September" | "October" | "November":
+            return "autumn."
+        case _:
+            return "Error"
+
+
+# -------------------------
+# Main program
+# -------------------------
+month = input("Enter the month: ")
+season = seasons(month)
+print("Month", month, "is in the", season)
