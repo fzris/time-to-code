@@ -1,0 +1,16 @@
+# -------------------------
+# Subprograms
+# -------------------------
+def water_state(centigrade):
+    if centigrade <= 0:
+      return "solid"
+    elif centigrade >= 100:
+      return "gas"
+    else:
+      return "liquid"
+# -------------------------
+# Main program
+centigrade = int(input("Enter the temperature in °C:"))
+state = water_state(centigrade)
+print("The water is in a", state, "state.")
+# -------------------------
